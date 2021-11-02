@@ -1,0 +1,269 @@
+/*Our team Section*/
+.team{
+    margin: 75px 0;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+    padding-bottom: 10px;
+}
+h1:after{
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+.profile{
+    margin-top: 25px;
+}
+.profile .img-box{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.profile h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.img-box:after{
+    content: '';
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    position:absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.img-box ul{
+    margin:0;
+    padding : 20px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.img-box ul li{
+    width: 30px;
+    height: 30px;
+    border: 0px solid #fff;
+    border-radius: 50%;
+    margin: 3px;
+    padding: 7px;
+    display: inline-block;
+}
+
+.img-box img{
+    width: 200px;
+    height: 200px;
+}
+.img-box a{
+    color: #fff;
+}
+.img-box:hover::after{
+ opacity: 1;
+}
+
+.img-box:hover ul{
+    opacity: 1;
+}
+.img-box a:hover {
+    color: #007bff;
+    border: 0px solid #007bff;
+}
+.img-box::after, .img-box ul, .img-box ul li{
+    transform: all 0.5s ease-in-out 0s;
+}
+/*Our team section end*/
+/*About us*/
+navbar{
+    background-color: white;
+}
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: orange;
+    background-color: black;
+}
+
+#main{
+    background-color: rgb(230 252 235);
+   /* background: url("../images/t.jpg")no-repeat;*/
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+}
+#main small{
+    font-size: 4.4rem;
+    font-weight: 300;
+}
+#main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+#main .btn1{
+    height: 55px;
+    width: 138px;
+    background-color: rgb(223,20,109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#main .btn1:hover{
+    background-color: rgb(202,18,95);
+    transition: 0.5s;
+}
+#main .btn2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: rgb(223,20,109);
+    outline: none;
+    border: 1px solid rgb(223,20,109);
+    font-weight: bold;
+    border-radius: 5px;
+}
+#main .btn2:hover{
+    background-color: rgb(223,20,109);;
+    transition: 0.5s;
+    color: white;
+}
+@media screen and (max-width: 1024px) {
+    #main{
+        background-color: rgb(230 252 235);
+       /* background: url("../images/t.jpg")no-repeat;*/
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    #main{
+        background-color: rgb(230 252 235);
+       /* background: url("../images/t.jpg")no-repeat;*/
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+    }
+    #main small{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    #main h3{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    #main .btn1{
+        height: 40px;
+        width: 70px;
+        background-color: rgb(223,20,109);
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    #main .btn1:hover{
+        background-color: rgb(202,18,95);
+        transition: 0.5s;
+    }
+    #main .btn2{
+        height: 40px;
+        width: 70px;
+        background-color: transparent;
+        color: rgb(223,20,109);
+        outline: none;
+        border: 1px solid rgb(223,20,109);
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    #main .btn2:hover{
+        background-color: rgb(223,20,109);;
+        transition: 0.5s;
+        color: white;
+    }
+    #main .btnstyle{
+        margin-top: -40px;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    #main{
+        background-color: rgb(230 252 235);
+       /* background: url("../images/t.jpg")no-repeat;*/
+        background-size: cover;
+        width: 100%;
+        height: 25vh;
+    }
+    #main small{
+        font-size: 17px;
+        font-weight: 300;
+    }
+    #main h3{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    #main .btn1{
+        height: 25px;
+        width: 64px;
+        background-color: rgb(223,20,109);
+        color: white;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 9px;
+    }
+    #main .btn1:hover{
+        background-color: rgb(202,18,95);
+        transition: 0.5s;
+    }
+    #main .btn2{
+        height: 25px;
+        width: 64px;
+        background-color: transparent;
+        color: rgb(223,20,109);
+        outline: none;
+        border: 1px solid rgb(223,20,109);
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 9px;
+    }
+    #main .btn2:hover{
+        background-color: rgb(223,20,109);;
+        transition: 0.5s;
+        color: white;
+    }
+    #main .btnstyle{
+        margin-top: -49px;
+    }
+    
+}
+

@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haweli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Owl Carousel File -->
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<style>
+    #whytochooseus {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/bg8.jpg');
+        background-size: cover;
+        color: #fff;
+        background-position: center;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+
+    #whytochooseus h2 {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+    }
+
+    #whytochooseus h2:after {
+        content: '';
+        background: #fff;
+        display: block;
+        height: 3px;
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    #recentblog-section h2 {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+    }
+
+    #recentblog-section h2:after {
+        content: '';
+        background: black;
+        display: block;
+        height: 3px;
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    #recentevent-section {
+        box-sizing: border-box;
+    }
+
+    #recentevent-section h2 {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+    }
+
+    #recentevent-section h2:after {
+        content: '';
+        background: black;
+        display: block;
+        height: 3px;
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    #recentevent-section .single-blog {
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.0.2);
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #fff;
+    }
+
+    #recentevent-section .single-blog .overlay {
+        width: 100%;
+        height: 100%;
+        background: black;
+
+
+    }
+
+    #recentevent-section .single-blog img {
+        width: 100%;
+        height: 223px;
+        border: 5px solid lightgray;
+        object-fit: cover;
+    }
+
+    #recentevent-section .single-blog img:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    #recentevent-section .single-blog h3 {
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #recentevent-section hr {
+        width: 35%;
+        height: 4px;
+        color: orange;
+    }
+
+    #recentevent-section .single-blog h3 a {
+        color: #03070a;
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-decoration: none;
+    }
+
+    #recentevent-section .single-blog h3 a:hover {
+        color: #bf0571;
+    }
+
+    #whytochooseus .icons {
+        font-size: 30px;
+        margin: 20px auto;
+        padding: 20px;
+        height: 80px;
+        width: 80px;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+     .bottom-menu{
+    position: fixed; bottom: 6%;margin-left: 50%;
+    z-index: 1;
+}
+ .bottom-menu .col-12{
+     border-radius: 20%;
+     cursor: pointer;
+}
+ .bottom-menu .col-12:hover{
+   transition: 0.5s;
+}
+ .bottom-menu a{
+    text-decoration: none;
+    color: black;
+}
+ .bottom-menu a:hover {
+    color: darkcyan;
+}
+ .bottom-menu small{
+    margin-top: -5px;font-size: 12px;
+}
+.sec-cat .content:hover{
+    background-color: antiquewhite;
+    opacity: 0.4;
+}
+</style>
+
+<body>
+    <header class="sticky-top bg-light py-2" id="navbar">
+        <div class="container-fluid">
+            <div class="row" style="display: flex;">
+                <div class="col-4 col-md-3 d-none d-lg-block my-lg-auto">
+                    <a class="navbar-brand"><img src="images/adlogo-removebg-preview (1).png" style="width: 60%;"></a>
+                </div>
+                <div class="col-12 d-block d-lg-none Mobile-view">
+                    <div class="row d-flex">
+                        <div class="col-6 my-lg-auto">
+                            <a class="navbar-brand"><img src="images/adlogo-removebg-preview (1).png"></a>
+                        </div>
+                        <div class="col-6 d-flex d-block d-lg-none navsection">
+                            <a href="" style="float: right;margin-left: auto;">Login</a>
+                            <a href="dashboard.html" style="float:right;margin-right: 10px;">Dashboard</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <form class="d-flex ">
+                        <!-- <div class="selector">
+                            <div class="selectfield " id="selectfield">
+                                <p id="selecttext">Type of Services</p>
+                                <img src="images/arrow.png" width="12px" alt=""
+                                    style="margin-bottom: 10px; transition: transform 0.5s;" id="arrowicon">
+                            </div>
+                            <div id="list" class="hide">
+                                <div class="options">
+                                    <p>Items on Sell</p>
+                                </div>
+                                <div class="options">
+                                    <p>Items on Rent</p>
+                                </div>
+                                <div class="options">
+                                    <p>Service Provider</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <input class="form-control border-left-0" type="search" placeholder="Find your product here..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success mx-1" type="submit"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-3 d-flex d-none d-lg-block navsection" style="padding-top: 6px;">
+                    <a href="Login.html">Login</a>
+                    <a href="dashboard.html" style="margin-left: 10px;">Dashboard</a>
+                </div>
+            </div>
+        </div>
+        <section class="categorie d-none d-lg-block">
+            <div class="container">
+                <div class="row pt-2">
+                    <div>
+                        <p>
+                            <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample" style="font-weight: 600;">
+                                ALL CATEGORIES <i class="fas fa-arrow-down"></i>
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <span>Services</span><br>
+                                        <a href="">Electronics & Computer</a><br>
+                                        <a href="">Education & Classes</a><br>
+                                        <a href="">Drivers & Taxi</a><br>
+                                        <a href="">Health & Beauty</a><br>
+                                        <a href="">Other Services</a><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Mobiles</span><br>
+                                        <a href="">Mobile Phones</a><br>
+                                        <a href="">Accessories</a><br>
+                                        <a href="">Tablets</a><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Properties(For Rent and sale)</span><br>
+                                        <a href="">Houses & Apartments</a><br>
+                                        <a href="">Houses & Apartments</a><br>
+                                        <a href="">Lands & Plots</a><br>
+                                        <a href="">Shops & Offices</a><br>
+                                        <a href="">Shops & Offices</a><br>
+                                        <a href="">PG & Guest Houses</a><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Fashion</span><br>
+                                        <a href="">Men</a><br>
+                                        <a href="">Women</a><br>
+                                        <a href="">Kids</a><br>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-3">
+                                        <span>Bikes</span><br>
+                                        <a href="">Motorcycles</a><br>
+                                        <a href="">Scooters</a><br>
+                                        <a href="">Spare Parts</a><br>
+                                        <a href="">Bicycles</a><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Electronics & Appliances</span><br>
+                                        <a href="">TVs, Video - Audio</a><br>
+                                        <a href="">Kitchen & Other Appliances</a><br>
+                                        <a href="">Computers & Laptops</a><br>
+                                        <a href="">Cameras & Lenses</a><br>
+                                        <a href="">Games & Entertainment
+                                        </a><br>
+                                        <a href="">Fridges</a><br>
+                                        <a href="">Computer Accessories</a><br>
+                                        <a href="">Hard Disks, Printers & Monitors</a><br>
+                                        <a href="">ACs</a><br>
+                                        <a href="">Washing Machines</a><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Furniture</span><br>
+                                        <a href="">Sofa & Dining</a><br>
+                                        <a href="">Beds & Wardrobes</a><br>
+                                        <a href="">Home Decor & Garden</a><br>
+                                        <a href="">Kids Furniture</a><br>
+                                        <a href="">Other Household Items</a><br>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Books, Sports & Hobbies</span><br>
+                                        <a href="">Books</a><br>
+                                        <a href="">Gym & Fitness</a><br>
+                                        <a href="">Musical Instruments</a><br>
+                                        <a href="">Sports Equipment</a><br>
+                                        <a href="">Other Hobbies</a><br>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-3">
+                                        <span>Cars</span><br>
+                                        <a href="">Cars</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <span>Pets</span><br>
+                                        <a href="">Fishes & Aquarium</a><br>
+                                        <a href="">Pet Food & Accessories</a><br>
+                                        <a href="">Dogs</a><br>
+                                        <a href="">Other Pets</a><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <hr style="margin-top: 2px;">
+    <section class="container-fluid " style="position: absolute;">
+        <div class="row bottom-menu">
+            <div class="col-12 text-center p-2  mx-auto">
+                <div class="row justify-content-center">
+                    <a  href="" style="border:4px solid lightseagreen;padding: 3px;border-radius: 10px;"><i class="fas fa-ad"></i>&nbsp;Sell</a>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!--<section>
+        <div class="container-fluid hero-section" style="z-index: -1;">
+            <div class="row p-sm-2">
+                <div class="col-sm-12 col-lg-4 my-sm-1" style="background-color:#DDEAF8;border-radius: 5px;">
+                    <div class="row py-xl-5">
+                        <div class="col-12 pt-2" style="color: #111;font-family: sans-serif;font-weight: 600;">
+                            <h4 class="">
+                                <span class="" style="font-weight: 600;">Get started with OLSNepal</span>
+                            </h4>
+                            <small class="p-lg-2" style="float: right;margin-right: 10px;">
+                                -No fees/No Commission
+                            </small>
+                        </div>
+                        <div class=" col-12 text-center pt-2">
+                            <h5 class="p-xl-2 buysell" style="color: #111;font-family: sans-serif;font-weight: 600;">
+                                <span class="">Buy, Sell Anything on</span> <br>
+                                <span class="">Dosromart</span>
+                            </h5>
+                        </div>
+                        <div class="col-12 text-center btn">
+                            <button class="btn btn-outline-success">Sell <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-8 d-lg-block d-none" style="border-radius: 5px;">
+                    <section class="banner-section ">
+                        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="banner my-1">
+                                            <div class="row">
+                                                <img src="images/adbanner2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item ">
+                                    <div class="row">
+                                        <div class="banner my-1">
+                                            <div class="row">
+                                                <img src="images/adbanner1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev " type="button"
+                                data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                                <span style="background-color: black;" class="carousel-control-prev-icon "
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                                <span style="background-color: black;" class="carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </section>-->
+    <!--Featured for sell-->
+    <section class="container p-2" id="shopbycategory">
+        <div class="row d-flex">
+            <div class="product_slider_container">
+                <div class="owl-carousel owl-theme product_slider2">
+                    <!--slider 1-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-suitcase-rolling" ></i>
+                                    <!-- <img src="images/Automotive & Motorbike.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Jobs</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <!--slider 12-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-motorcycle"></i>
+                                    <!-- <img src="images/electronics.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Bike</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 2-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-car " ></i>
+                                    <!-- <img src="images/electronic acc.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Car</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 3-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-mobile-alt "></i>
+                                    <!-- <img src="images/homeapp.png" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Mobile</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 4-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-bicycle" ></i>
+                                    <!-- <img src="images/health-beauty.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Bicycle
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 5-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-couch " ></i>
+                                    <!-- <img src="images/Baby-Toy.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Furniture</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 6-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="far fa-building" ></i>
+                                    <!-- <img src="images/Groceries & Pets.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Property</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 7-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-tshirt "></i>
+                                    <!-- <img src="images/Home & Lifestyle.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Fashion</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 8-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-dog "></i>
+                                    <!-- <img src="images/deal_ofthe_week.png" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Pets</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 9-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-tv"></i>
+                                    <!-- <img src="images/women's Fashion.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Electronics</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 10-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="fas fa-truck-monster"></i>
+                                    <!-- <img src="images/Watches & Accessories.jpg" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Spares</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--slider 11-->
+                    <div class="owl-item product_slider_item">
+                        <div class="cat-card my-2">
+                            <a href="">
+                                <div class="imgbx">
+                                    <i class="far fa-clock"></i>
+                                    <!-- <img src="images/Sports.png" alt="" class=""> -->
+                                </div>
+                                <div class="content text-center">
+                                    <span>Watches</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container hero-section" style="z-index: -1;">
+            <div class="row p-sm-2">
+                <div class="col-12" style="border-radius: 5px;">
+                    <section class="banner-section ">
+                        <div class="row">
+                            <div class="banner my-1">
+                                <div class="row">
+                                    <img src="images/samplebanner.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container" id="parttimefeatured">
+        <h4 class="my-2">Fresh Recommendation</h4>
+        <hr>
+        <div class="row g-1">
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/lap1.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/manish.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/mobile.png" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/jewe1.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--Featured for Rent-->
+    <section class="container" id="parttimefeatured">
+        <h4 class="my-2">Rental Provider nearby </h4>
+        <hr>
+        <div class="row g-1">
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/lap1.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/scooti.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/manish.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/mobile.png" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/jewe1.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--Featured Services-->
+    <section class="container" id="parttimefeatured">
+        <h4 class="my-2">Services Provider nearby</h4>
+        <hr>
+        <div class="row g-1">
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/lap1.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/scooti.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/manish.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/mobile.png" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 my-1">
+                <a href="">
+                    <div class="card">
+                        <div style="display: flex;">
+                            <div class="text-center"
+                                style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                                <span>Featured</span>
+                            </div>
+                        </div>
+                        <div class="col-12 imgbx">
+                            <img src="images/jewe1.jpg" alt="">
+                            <div class="topright"><a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-sm-2 content">
+                            <div class="price">
+                                <span class="">Rs.750</span>
+                            </div>
+                            <div class="product-name">
+                                <a href="">T-shirt with all sizes are Availabe at 550 each...</a>
+                            </div>
+                            <div class="address-time">
+                                <small>Jhajra,Dehradun</small>
+                                <small class="d-sm-block d-none" style="float: right;margin-right: 5px;">Sept 10</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--Job Section-->
+    <section class="container my-3" id="job-section">
+        <h2 class="mt-3">Jobs Of The Week</h2>
+        <p class="text-center" style="text-align: justify; font-size: 13px;font-weight: 600;">This section includes jobs
+            posted in this week.Find job related to your skill and contact with the Job provider directly. </p>
+
+        <div class="row">
+            <div class="col-12 my-2">
+                <div style="float: right;margin-left: auto;font-size: 18px;">
+                    <a href=""><i class="fas fa-plus-square">&nbsp; Post your Job</i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 jobcard">
+                <div class="row p-3 d-flex">
+                    <div class="col-3 logo">
+                        <img src="images/clz.jpg" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href=""><span class="title"><b>Software Engineer Required urgently in Pokhara</b></span></a>
+                        <p class="subtitle">Pokhara Pvt Ltd</p>
+                        <div class="col-12 d-flex">
+                            <div>
+                                <span class="subtitle" style="margin-top: -8px;">
+                                    <i class="fas fa-map-marker-alt"></i><br>
+                                    Pokhara,Nepal</span>
+                            </div>
+                            <div class="mt-2"
+                                style="float: right;margin-left: auto;margin-right: auto;font-size: 11px;">
+                                <div class="text-center border-bottom rounded-top" style="background-color: darkcyan;">
+                                    <span><b>Duration:</b></span>
+                                </div>
+                                <div>
+                                    <span>9 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 jobcard">
+                <div class="row p-3 d-flex">
+                    <div class="col-3 logo">
+                        <img src="images/clz.jpg" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href=""><span class="title"><b>Cleaner Required in Pokhara</b></span></a>
+                        <p class="subtitle">Pokhara Pvt Ltd</p>
+                        <div class="col-12 d-flex">
+                            <div>
+                                <span class="subtitle" style="margin-top: -8px;">
+                                    <i class="fas fa-map-marker-alt"></i><br>
+                                    Pokhara,Nepal</span>
+                            </div>
+                            <div class="mt-2"
+                                style="float: right;margin-left: auto;margin-right: auto;font-size: 11px;">
+                                <div class="text-center border-bottom rounded-top" style="background-color: darkcyan;">
+                                    <span><b>Duration:</b></span>
+                                </div>
+                                <div>
+                                    <span>9 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 jobcard">
+                <div class="row p-3 d-flex">
+                    <div class="col-3 logo">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href=""><span class="title"><b>Cleaner Required in Pokhara</b></span></a>
+                        <p class="subtitle">Pokhara Pvt Ltd</p>
+                        <div class="col-12 d-flex">
+                            <div>
+                                <span class="subtitle" style="margin-top: -8px;">
+                                    <i class="fas fa-map-marker-alt"></i><br>
+                                    Pokhara,Nepal</span>
+                            </div>
+                            <div class="mt-2"
+                                style="float: right;margin-left: auto;margin-right: auto;font-size: 11px;">
+                                <div class="text-center border-bottom rounded-top" style="background-color: darkcyan;">
+                                    <span><b>Duration:</b></span>
+                                </div>
+                                <div>
+                                    <span>9 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 jobcard">
+                <div class="row p-3 d-flex">
+                    <div class="col-3 logo">
+                        <img src="images/clz.jpg" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href=""><span class="title"><b>Cleaner Required in Pokhara</b></span></a>
+                        <p class="subtitle">Pokhara Pvt Ltd</p>
+                        <div class="col-12 d-flex">
+                            <div>
+                                <span class="subtitle" style="margin-top: -8px;">
+                                    <i class="fas fa-map-marker-alt"></i><br>
+                                    Pokhara,Nepal</span>
+                            </div>
+                            <div class="mt-2"
+                                style="float: right;margin-left: auto;margin-right: auto;font-size: 11px;">
+                                <div class="text-center border-bottom rounded-top" style="background-color: darkcyan;">
+                                    <span><b>Duration:</b></span>
+                                </div>
+                                <div>
+                                    <span>9 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 jobcard">
+                <div class="row p-3 d-flex">
+                    <div class="col-3 logo">
+                        <img src="images/clz.jpg" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href=""><span class="title"><b>Cleaner Required in Pokhara</b></span></a>
+                        <p class="subtitle">Pokhara Pvt Ltd</p>
+                        <div class="col-12 d-flex">
+                            <div>
+                                <span class="subtitle" style="margin-top: -8px;">
+                                    <i class="fas fa-map-marker-alt"></i><br>
+                                    Pokhara,Nepal</span>
+                            </div>
+                            <div class="mt-2"
+                                style="float: right;margin-left: auto;margin-right: auto;font-size: 11px;">
+                                <div class="text-center border-bottom rounded-top" style="background-color: darkcyan;">
+                                    <span><b>Duration:</b></span>
+                                </div>
+                                <div>
+                                    <span>9 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 jobcard">
+                <div class="row p-3 d-flex">
+                    <div class="col-3 logo">
+                        <img src="images/team.jpg" alt="">
+                    </div>
+                    <div class="col-9">
+                        <a href=""><span class="title"><b>Cleaner Required in Pokhara</b></span></a>
+                        <p class="subtitle">Pokhara Pvt Ltd</p>
+                        <div class="col-12 d-flex">
+                            <div>
+                                <span class="subtitle" style="margin-top: -8px;">
+                                    <i class="fas fa-map-marker-alt"></i><br>
+                                    Pokhara,Nepal</span>
+                            </div>
+                            <div class="mt-2"
+                                style="float: right;margin-left: auto;margin-right: auto;font-size: 11px;">
+                                <div class="text-center border-bottom rounded-top" style="background-color: darkcyan;">
+                                    <span><b>Duration:</b></span>
+                                </div>
+                                <div>
+                                    <span>9 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--End of Job Section-->
+    <!--Why to choose us-->
+    <section class="mt-3">
+        <div class="container" id="whytochooseus">
+            <div class="row my-2">
+                <h2 class="">Why To Choose Us </h2>
+                <p class="text-center d-none d-md-block" style="text-align: justify; font-size: 13px;">Haweli is a
+                    unique concept. That benefits users by getting new Customer,Growing their Revenue by building their
+                    online Reputation.</p>
+
+                <div class="col-sm-4 col-12 text-center">
+                    <div class="icons">
+                        <i class="far fa-handshake"></i>
+                    </div>
+                    <h6>MEET NEW CUSTOMER</h6>
+                </div>
+                <div class="col-sm-4 col-12 text-center">
+                    <div class="icons">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h6>GROW YOUR REVENUE</h6>
+                </div>
+                <div class="col-sm-4 col-12 text-center">
+                    <div class="icons">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h6>BUILD YOUR ONLINE REPUTATION</h6>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--our partner-->
+    <div class="team partner p-3" id="partner">
+        <div class="container" style="font-family: sans-serif;background-color: honeydew;">
+            <h1 class="mt-2">OUR PARTNERS</h1>
+            <div class="row d-sm-flex">
+                <div class="col-sm-6 col-12">
+                    <div class="row d-flex p-3">
+                        <div class="col-lg-3 col-12 text-center ">
+                            <img src="images/cyclelogo.png" alt=""
+                                style="width: 90px;height: 90px;border-radius: 50%;object-fit: fill;">
+                        </div>
+                        <div class="col-lg-9 col-12 mt-4">
+                            <h3><b>Jaiswal Cycle/Machinary Store</b></h3>
+                            <hr style="width: 25%;height: 5px;color: coral;">
+                            <span style="font-weight: 500;color: gray;">Main-Road Kolhabi,Bara,Nepal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="row d-flex p-3">
+                        <div class="col-lg-3 col-12 text-center ">
+                            <img src="images/cyclelogo.png" alt=""
+                                style="width: 90px;height: 90px;border-radius: 50%;object-fit: contain;">
+                        </div>
+                        <div class="col-lg-9 col-12 mt-4">
+                            <h3><b>Goodwill Shrting Shuting and Tariloring</b></h3>
+                            <hr style="width: 25%;height: 5px;color: coral;">
+                            <span style="font-weight: 500;color: gray;">Paragatipath,Narayanghat-putlibazar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--our partner end-->
+    <!--Recent Blog Post-->
+    <section class="container mt-1" id="recentblog-section">
+        <h2 class="mt-3">Recent Posts</h2>
+        <div class="row">
+            <div class="col-12">
+                <form action="" class="d-flex">
+                    <div class="form-group mt-2 mx-auto w-75">
+                        <input type="text" class="form-control border border-dark" id="search"
+                            placeholder="Search Blog here..." name="search">
+                    </div>
+                    <button class="btn3 mt-2 mr-3" style="margin-right: 5px;">Search</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="single-blog">
+                    <p class="blog-meta">By Manish152207 <span>September 24,2021</span></p>
+                    <img src="images/team1.png" alt="">
+                    <h2><a href="">Introduction of ehaweli and its services to nearby people</a></h2>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officiis, magni
+                        aperiam et laudantium blanditiis nulla commodi voluptas eveniet facilis! </p>
+                    <p><a href="" class="read-more-btn">Read More</a>
+
+                        <span> <i class="fas fa-comment"></i> 3..</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-blog">
+                    <p class="blog-meta">By Manish152207 <span>September 24,2021</span></p>
+                    <img src="images/login.jpg" alt="">
+                    <h2><a href="">Introduction of ehaweli and its services to nearby people</a></h2>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officiis, magni
+                        aperiam et laudantium blanditiis nulla commodi voluptas eveniet facilis! </p>
+                    <p><a href="" class="read-more-btn">Read More</a>
+
+                        <span> <i class="fas fa-comment"></i> 3..</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-blog">
+                    <p class="blog-meta">By Manish152207 <span>September 24,2021</span></p>
+                    <img src="images/clz.jpg" alt="">
+                    <h2><a href="">Introduction of ehaweli and its services to nearby people</a></h2>
+                    <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officiis, magni
+                        aperiam et laudantium blanditiis nulla commodi voluptas eveniet facilis! </p>
+                    <p><a href="" class="read-more-btn">Read More</a>
+
+                        <span> <i class="fas fa-comment"></i> 3..</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--Latest Events-->
+    <section class="container mt-1 bg-light" id="recentevent-section">
+        <h2 class="pt-3">Latest Events</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="single-blog">
+                    <div class="overlay">
+                        <a href=""><img src="images/Ranger.jpg" alt=""></a>
+                    </div>
+
+                    <hr>
+                    <h3><a href="">Introduction of ehaweli and its services to nearby people</a></h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-blog">
+                    <a href=""><img src="images/login.jpg" alt=""></a>
+                    <hr>
+                    <h3><a href="">Introduction of ehaweli and its services to nearby people</a></h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-blog">
+                    <a href=""><img src="images/clz.jpg" alt=""></a>
+                    <hr>
+                    <h3><a href="">Introduction of ehaweli and its services to nearby people</a></h3>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--footer starts from here-->
+    <footer class="footer bg-light">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col text-secondary">
+                    <h5 class="headin5_amrc col_white_amrc pt2"><img width=85px src="images/logo.jpeg"></h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10 text-secondary">Buy,Sell,Keep Anything on Rent and Provide Paid Services to nearby
+                        Customer.</p>
+                    <p class="text-secondary"><i class="fa fa-location-arrow"></i>Kolhabi,Bara Nepal </p>
+                    <p class="text-secondary"><i class="fa fa-location-arrow"></i>Birgunj,Parsa Nepal </p>
+                    <p class="text-secondary"><i class="fa fa-location-arrow"></i>Narayanghat, Nepal </p>
+                    <p class="text-secondary"><i class="fa fa-phone"></i> +9779811170683 </p>
+                    <p class="text-secondary"><i class="fa fa fa-envelope"></i> csmanishankar@gmail.com </p>
+
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col text-secondary">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-info font-weight-bolder">POPULAR LOCATIONS</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="">Kathmandu</a></li>
+                        <li><a href="">Pokhara</a></li>
+                        <li><a href="">Narayanghat</a></li>
+                        <li><a href="">Birgunj</a></li>
+                        <li><a href="">Kalaiya</a></li>
+                        <li><a href="">Chitwan</a></li>
+                        <li><a href="">Biratnagar</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col text-secondary">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-info font-weight-bolder">ABOUT US</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <!-- <li><a href="">About HAWELI Group</a></li> -->
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="about.html#team">HAWELI People</a></li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-12 col text-secondary">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-info font-weight-bolder">HAWELI</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li><a href="">Help</a></li>
+                        <li><a href="">Legal & Privacy information</a></li>
+                        <li><a href="disallow item.html">Items/Services not allowed on OLSNepal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="http://webenlance.com">Blog</a></li>
+                <li><a href="http://webenlance.com">About</a></li>
+                <li><a href="http://webenlance.com">Contact</a></li>
+                <li><a href="http://webenlance.com">Events</a></li>
+            </ul>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright @2017 | Designed With by <a href="#">Manishankar</a></p>
+
+            <ul class="social_footer_ul">
+                <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
+
+
+    </footer>
+    <!-- <script>
+        var SelectField = document.getElementById("selectfield");
+        var SelectText = document.getElementById("selecttext");
+        var options = document.getElementsByClassName("options");
+        var list = document.getElementById("list");
+        var arrowIcon = document.getElementById("arrowicon");
+        var option;
+        SelectField.onclick = function () {
+            list.classList.toggle('hide');
+            arrowIcon.classList.toggle('rotate');
+        }
+        for (option of options) {
+            option.onclick = function () {
+                SelectText.innerHTML = this.textContent;
+                list.classList.toggle('hide');
+                arrowIcon.classList.toggle('rotate');
+            }
+        }
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+        <!-- jquery JS File -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Isotope JS File -->
+    <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+    <!-- Owl Carousel JS File -->
+    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <!-- Javascript File -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

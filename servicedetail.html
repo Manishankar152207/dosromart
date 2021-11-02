@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haweli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    #product-detail .btn1 {
+        height: 50px;
+        width: 200px;
+        background-color: #bf0571;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #product-detail .btn1:hover {
+        background-color: white;
+        color: black;
+        outline: red;
+        border: 1px solid red;
+        transition: 0.5s;
+    }
+</style>
+
+<body>
+    <header class="sticky-top my-2 bg-light py-2" id="navbar">
+        <div class="container">
+            <div class="row" style="display: flex;">
+                <div class="col-4 col-md-2 d-none d-lg-block my-lg-auto">
+                    <a class="navbar-brand"><img width=85px src="images/logo.png"></a>
+                </div>
+                <div class="col-12 d-block d-lg-none">
+                    <div class="row d-flex">
+                        <div class="col-4 my-lg-auto" style="float: left;">
+                            <a class="navbar-brand"><img width=85px src="images/logo.png"></a>
+                        </div>
+                        <div class="offset-1 offset-sm-none col-4 d-flex d-block d-lg-none navsection" style="float: right;">
+                            <a href="">Login</a>
+                            <a href="dashboard.html">Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <form class="d-flex ">
+                        <div class="selector">
+                            <div class="selectfield " id="selectfield">
+                                <p id="selecttext">Type of Services</p>
+                                <img src="images/arrow.png" width="12px" alt="" style="margin-bottom: 10px; transition: transform 0.5s;" id="arrowicon">
+                            </div>
+                            <div id="list" class="hide">
+                                <div class="options">
+                                    <p>Items on Sell</p>
+                                </div>
+                                <div class="options">
+                                    <p>Items on Rent</p>
+                                </div>
+                                <div class="options">
+                                    <p>Service Provider</p>
+                                </div>
+                            </div>
+                        </div>
+                        <input class="form-control border-left-0" type="search" placeholder="Find your product here..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-4 d-flex d-none d-lg-block navsection" style="padding-top: 6px;">
+                    <a href="Login.html">Login</a>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+            </div>
+        </div>
+</header>
+    <section class="categorie">
+        <div class="container">
+            <div class="row pt-2">
+                <p>
+                    <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        ALL CATEGORIES <i class="fas fa-arrow-down"></i>
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                        proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="product-detail my-1" id="product-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row p-md-3">
+                        <div class="col-xs-12 px-3 mt-1">
+                            <span> AD ID: 123456789</span>
+                            <a href=""><i class="fas fa-share-alt mr-md-5" style="float: right;"></i></a>
+                        </div>
+                        <div class="col-xs-12 px-3 mt-1">
+                            <div class="row text-center"
+                                style="background-image: url(images/maxresdefault.jpg);object-fit: contain;height: 70%;">
+                                <div class="profile_detail mt-5" style="margin-left: auto;margin-right: auto;">
+                                    <img src="images/my.jpg" width="225px" height="225px" alt=""
+                                        style="border-radius: 50%;">
+                                    <h4>Manishankar Prasad Jaiswal</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="row p-md-3 mt-3">
+                        <div class="col-xs-12 mt-2">
+                            <span
+                                style="font-size: 25px;font-family: 'Times New Roman', Times, serif;font-weight: bold;">Rs.
+                                <span style="font-weight: 500;">&nbsp;5000/day</span> </span>
+                        </div>
+                        <div class="col-xs-12 mt-2" style="text-align: justify;">
+                            <span style="font-size: 20px;font-family: 'Times New Roman', Times, serif;"><b>Lorem, ipsum
+                                    dolor sit amet consectetur adipisicing elit.</b> </span>
+                        </div>
+                        <div class="col-xs-12 mt-2">
+                            <span
+                                style="font-size: 25px;font-family: 'Times New Roman', Times, serif;"><b>Skill</b>:&nbsp;Electrician</span>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="row mb-3 ">
+                                <div class="contact-btn mt-4">
+                                    <button type="submit" class="fv-btn"><i class="fas fa-mobile text-dark"></i>&nbsp;
+                                        Click To View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 mt-2">
+                            <span class="" style="font-size: 20px; font-family: 'Times New Roman', Times, serif;"><i
+                                    class="far fa-envelope"></i> csmanishankar@gmail.com</span>
+                        </div>
+                        <button class="btn btn-outline-dark mt-3 px-3" type="submit" style=" height: 40px;padding:0px">
+                            <a class="nav-link" href="#" style="font-weight: bold;padding:2px">Chat</a></button>
+                        <div class="col-6 float-left mt-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Dhoolkot,Tula's Institute</p>
+                        </div>
+                        <div class="col-6 float-right mt-3">
+                            <i class="far fa-calendar-alt" style="margin-left: 125px;"></i>
+                            <p style="margin-left: 125px;">8 Feb</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 border border-secondary rounded-top mt-1">
+                    <div class="row p-3" style="text-align: justify;">
+                        <div>
+                            <h4>Description</h4>
+                        </div>
+                        <p>Some quick example text to build ....Anim pariatur cliche reprehenderit, enim eiusmod high
+                            life accusamus terry richardson ad squid.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                            proident.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 border border-secondary rounded-top mt-1">
+                    <div class="row p-3" style="text-align: justify;">
+                        <div>
+                            <h4>Experience</h4>
+                        </div>
+                        <p>Some quick example text to build ....Anim pariatur cliche reprehenderit, enim eiusmod high
+                            life accusamus terry richardson ad squid.
+                            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                            proident.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-12 border border-secondary rounded-top mt-1">
+                    <div class="row p-3" style="text-align: justify;">
+                        <div>
+                            <h4>REVIEW</h4>
+                        </div>
+                        <div class="col-12 px-3 my-3">
+                            <div class="row d-flex">
+                                <div class="col-1">
+                                    <i class="fas fa-user fa-2x"></i>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class=" col-10">
+                                    <h6 style="font-weight: 600;">Manishankar Jaiswal</h6>
+                                    <span style="color: gray;">Very good content.... </span><br>
+                                    <span style="color: black;font-weight: bold;">4.5&nbsp;<i class="fas fa-star"
+                                            style="color: orange;"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-3 my-3">
+                            <div class="row d-flex">
+                                <div class="col-1">
+                                    <i class="fas fa-user fa-2x"></i>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class=" col-10">
+                                    <h6 style="font-weight: 600;">Manishankar Jaiswal</h6>
+                                    <span style="color: gray;">Very good content.... </span><br>
+                                    <span style="color: black;font-weight: bold;">4.5&nbsp;<i class="fas fa-star"
+                                            style="color: orange;"></i></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-3 my-3">
+                            <div class="row d-flex">
+                                <div class="col-1">
+                                    <i class="fas fa-user fa-2x"></i>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class=" col-10">
+                                    <h6 style="font-weight: 600;">Manishankar Jaiswal</h6>
+                                    <span style="color: gray;">Very good content.... </span><br>
+                                    <span style="color: black;font-weight: bold;">4.5&nbsp;<i class="fas fa-star"
+                                            style="color: orange;"></i></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <form action="/action_page.php">
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control mb-" id="cmt" placeholder="Your Comment...." cols="10"
+                                        rows="5"></textarea>
+                                </div>
+                                <div class="form-group mt-3 d-flex">
+                                    <input type="number" class="form-control w-25" id="rating"
+                                        placeholder="Rating Points" name="rating">
+                                    <label for="rating" class="mt-2">&nbsp;Out of 5</label>
+                                </div>
+                                <div class="checkbox mt-3">
+                                    <label><input type="checkbox" name="remember"> I'm not a robot.</label>
+                                </div>
+                                <button class="btn1 mt-2">POST COMMENT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="parttimefeatured" class=" mt-0 border-radius-3">
+        <div class="container featured-background">
+            <h4 class="my-2">Owner Ads</h4>
+            <div class="row featured-padding">
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81); margin-top: 5px;margin-bottom: 5px">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/scooti.jpg" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81);margin-top: 5px;margin-bottom: 5px;">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/clz.jpg" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10 .</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81);margin-top: 5px;margin-bottom: 5px;">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/8.png" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81);margin-top: 5px;margin-bottom: 5px;">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/8.png" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <section id="parttimefeatured" class="bg-light mt-0 border-radius-3">
+        <div class="container featured-background">
+            <h4 class="my-2">Related Services</h4>
+            <div class="row featured-padding">
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81); margin-top: 5px;margin-bottom: 5px">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/scooti.jpg" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81);margin-top: 5px;margin-bottom: 5px;">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/clz.jpg" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10 .</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81);margin-top: 5px;margin-bottom: 5px;">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/8.png" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-3 "
+                    style="border-right: 3px solid rgb(99, 232, 81);margin-top: 5px;margin-bottom: 5px;">
+                    <div style="display: flex;">
+                        <div class="text-center"
+                            style="background-color: rgb(99, 232, 81);font-weight: 500;color: rgb(35, 4, 39);width: 50px;font-size: 9px;border-bottom-right-radius: 50px;border-top-left-radius: 50px;">
+                            <span>Sell</span>
+                        </div>
+
+                    </div>
+                    <div class="featuredimg mx-auto">
+                        <img src="images/8.png" class="" alt="...">
+                        <div class="topright"><a href=""><i class="fas fa-share-alt float-left"></i></a></div>
+                        <div class="bottomright d-md-block d-none"><img src="images/logo.png" alt=""></div>
+                    </div>
+                    <div class="col-12 cardbody" style="padding: 5px;">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="price_margin">
+                                    Rs.50000000/hr</span>
+                            </div>
+                            <div class="pro-title-height col-12">
+                                <p class="pro-title">I can give tution classes to class 5 to class
+                                    10.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="pro-location">Jhajra,Dehradun
+                                        </p>
+
+                                    </div>
+                                    <div class="col-2 text-center">
+                                        <span class="pro-rating">3.5</span><i class="d-block d-md-none fas fa-star"></i>
+                                    </div>
+                                    <div class="col-1 mb-3">
+                                        <i class="d-none d-md-block fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" class="rui-3sH3b rui-3K5JC rui-1zK8h my-3 "><span>See more</span></button>
+        </div>
+    </section>
+    <!--footer starts from here-->
+    <footer class="footer bg-light mt-1">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class=" col-sm-4 col-md col-sm-4  col-12 col text-secondary">
+                    <h5 class="headin5_amrc col_white_amrc pt2"><img width=85px src="images/logo.png"></h5>
+                    <!--headin5_amrc-->
+                    <p class="mb10 text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    <p class="text-secondary"><i class="fa fa-location-arrow"></i> Tula's Institute, Dhoolkot, 248011
+                    </p>
+                    <p class="text-secondary"><i class="fa fa-phone"></i> +91-6398685806 </p>
+                    <p class="text-secondary"><i class="fa fa fa-envelope"></i> csmanishankar@gmail.com </p>
+
+
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-info font-weight-bolder">POPULAR LOCATIONS</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li>Dehradun</li>
+                        <li>Delhi</li>
+                        <li>Mumbai</li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-6 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-info font-weight-bolder">ABOUT US</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li>About HAWELI Group</li>
+                        <li>Contact Us</li>
+                        <li>HAWELI People</li>
+                    </ul>
+                    <!--footer_ul_amrc ends here-->
+                </div>
+
+
+                <div class=" col-sm-4 col-md  col-12 col">
+                    <h5 class="headin5_amrc col_white_amrc pt2 text-info font-weight-bolder">HAWELI</h5>
+                    <!--headin5_amrc-->
+                    <ul class="footer_ul_amrc">
+                        <li>Help</li>
+                        <li>Sitemap</li>
+                        <li>Legal & Privacy information</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="http://webenlance.com">Home</a></li>
+                <li><a href="http://webenlance.com">Services</a></li>
+                <li><a href="http://webenlance.com">Blog</a></li>
+                <li><a href="http://webenlance.com">About</a></li>
+                <li><a href="http://webenlance.com">Contact</a></li>
+            </ul>
+            <!--foote_bottom_ul_amrc ends here-->
+            <p class="text-center">Copyright @2017 | Designed With by <a href="#">Manishankar</a></p>
+
+            <ul class="social_footer_ul">
+                <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="http://webenlance.com"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!--social_footer_ul ends here-->
+        </div>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
